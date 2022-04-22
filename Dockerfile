@@ -1,5 +1,6 @@
 FROM golang:1.18-alpine as builder
 
+RUN apk add --no-cache git
 WORKDIR /app
 COPY go.* ./
 RUN go mod download
@@ -13,5 +14,5 @@ FROM alpine:3.15 as runner
 WORKDIR /app
 COPY --from=builder /app ./
 
-ENTRYPOINT ["./main"]
+ENTRYPOINT ["./app_GIN"]
 
