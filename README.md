@@ -1,6 +1,7 @@
 # Reefy
 
 Cooking app that stores many recipes for great foods!
+For more information about the development refer to [development.md](https://github.com/adriang-90/app_GIN/development.md)
 
 ## Installation
 
@@ -32,3 +33,4 @@ Please make sure to update tests as appropriate.
 
 ## License
 Apache
+
